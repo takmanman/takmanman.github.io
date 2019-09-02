@@ -1,3 +1,5 @@
+@import url(autumn.css);
+
 body {
     margin: 60px auto;
     width: 60%;
@@ -21,8 +23,11 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 2.5em;
-    
+    font-size: 2.5em;  
+}
+h3 {  
+    font-size: 1.8em;
+    margin: 10px	
 }
 p {
     font-size: 1.2em;
@@ -40,5 +45,14 @@ ul.posts {
 }
 
 ul.posts li {
+    list-style: none;
+}
+
+ul.tutorials { 
+    margin: 20px auto 40px; 
+    font-size: 1.2em;
+}
+
+ul.tutorials li {
     list-style: none;
 }
