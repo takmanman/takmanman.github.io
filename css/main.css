@@ -1,4 +1,4 @@
-@import url(autumn.css);
+@import url(mande.css);
 
 body {
     margin: 60px auto;
@@ -25,9 +25,13 @@ a:hover {
 h1 {
     font-size: 2.5em;  
 }
+h2 {  
+    font-size: 2.0em;
+    
+}
 h3 {  
     font-size: 1.8em;
-    margin: 10px	
+    
 }
 p {
     font-size: 1.2em;
