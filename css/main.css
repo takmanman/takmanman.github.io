@@ -3,7 +3,8 @@
 body {
     margin: 60px auto;
     width: 60%;
-	font-family:"Courier New", Courier, monospace
+	line-height: 1.5;
+	
 }
 nav ul, footer ul {
     
@@ -59,4 +60,29 @@ ul.tutorials {
 
 ul.tutorials li {
     list-style: none;
+}
+
+span.code_function {	
+	font-weight: bold;
+	font-family: "Courier New", Courier, monospace;
+	color: #2A4B7C
+}
+
+span.important_term {
+	text-decoration: none;
+	border-bottom: 1px solid #BB4A4D;
+	
+}
+
+.output {
+	font-family: "Courier New", Courier, monospace;
+	color: #A35323;
+	margin:0;
+	padding-top: 0.1em;
+	padding-right: 1.2em;
+	padding-bottom: 0.8em;
+	padding-left: 1.2em;
+	background-color: #E6E7E7;
+	font-size: 1.2em;
+	line-height:1.5;
 }
