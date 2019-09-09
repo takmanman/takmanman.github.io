@@ -2,7 +2,7 @@
 
 body {
     margin: 60px auto;
-    width: 60%;
+    width: 80%;
 	line-height: 1.5;
 	
 }
@@ -10,6 +10,7 @@ nav ul, footer ul {
     
     padding: 0px;
     list-style: none;
+	font-size: 1.2em;
     font-weight: bold;
 }
 nav ul li, footer ul li {
@@ -36,9 +37,18 @@ h3 {
 }
 p {
     font-size: 1.2em;
-    line-height: 1.0em;
+    line-height: 1.2em;
     color: #333;
 }
+
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
