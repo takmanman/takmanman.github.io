@@ -1,7 +1,4 @@
-name: A Probable Blog by Takmanman
-markdown: kramdown
-highlighter: rouge
+title: A Probable Blog
+remote_theme: chrisrhymes/bulma-clean-theme
+theme: bulma-clean-theme
 
-collections:
-    tutorials:
-        output: true
