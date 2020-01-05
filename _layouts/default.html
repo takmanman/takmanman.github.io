@@ -1,0 +1,23 @@
+{% assign content_width = 'is-12' %} 
+<!doctype html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<html> 
+  <body>	
+	{% include hero.html %}
+	
+	<section class="section">
+        <div class="container">
+            <div class="columns">                
+                <div class="column {{ content_width }}">           
+					<div class="content">				
+						{{ content }}
+					</div> 
+                </div>                
+            </div>	
+        </div>
+    </section>
+  </body>
+</html>
