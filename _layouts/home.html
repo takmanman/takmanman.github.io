@@ -1,0 +1,44 @@
+{% assign content_width = 'is-12' %} 
+<!doctype html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<html> 
+  <body>	
+	{% include hero.html %}
+	
+	<section class="section">
+        <div class="container">
+			<div class="content">
+			{{ content }}			
+			</div>
+
+		</div>
+		
+	</section>
+	
+	{%- if site.posts.size > 0 -%}
+	<section class="section">
+	<div class="container">
+		<div class="tile is-ancestor">
+		{%- for post in site.posts -%}
+		
+		<a class="tile is-child is-4 box" href="{{ post.url}}">
+		  
+          <h1 class = "subtitle">{{post.title}}</h1>
+          
+          <figure class="image">
+            <img src= {{post.image}}>
+          </figure>
+		  
+		  <p>{{post.description}}</p>	  
+
+        </a>		
+		{%- endfor -%}
+		</div>
+		
+	</section>
+	{%- endif -%}	
+  </body>
+</html>
