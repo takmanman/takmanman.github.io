@@ -1,47 +1,41 @@
-{% assign content_width = 'is-12' %} 
 <!doctype html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="/assets/css/styles.css">
+	<link rel="stylesheet" href="/assets/css/afloat.css">
+
 </head>
 <html> 
   <body>	
-	{% include hero.html %}
-	
-	<section class="section">
+	<div class="banner">
         <div class="container">
-			<div class="content">
-			{{ content }}			
-			</div>
-
-		</div>
-		
-	</section>
+            <p class = "title">{{ page.title }}</p>
+            <p class = "subtitle">{{ page.subtitle }}</p>
+        </div>
+	</div>
+	
+	<div class="container">
+		{{content}}
+	</div>
 	
 	{%- if site.posts.size > 0 -%}
-	<section class="section">
 	<div class="container">
-		<div class="tile is-ancestor">
+		<div class="posts-container">
 		{%- for post in site.posts -%}
-		
-		<a class="tile is-child is-4 box" href="{{ post.url}}">
+			
+		<a class="post-float" href="{{ post.url}}">
 		  
-          <h1 class = "subtitle">{{post.title}}</h1>
-		  
-		  
-		  
-          
-          <figure class="image">
-            <img src= {{post.image}}>
-          </figure>
-		  
+		  <div class= "date"> {{ post.date | date_to_long_string }} </div>
+          <h1>{{post.title}}</h1>  
+		  <img src ="{{post.image}}"></img>
 		  <p>{{post.description}}</p>	  
-
+		  
         </a>		
 		{%- endfor -%}
-		</div>
+	</div>
 		
-	</section>
+
 	{%- endif -%}	
-  </body>
+
+
+ </body>
 </html>
