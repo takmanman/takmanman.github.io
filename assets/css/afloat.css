@@ -104,6 +104,9 @@ img {
   [class*="post-float"] {
     width: 95%;
   }
+  [class*="banner"]{
+	padding: 3em 2em;
+  }
 }
   
 .post-float:hover{
