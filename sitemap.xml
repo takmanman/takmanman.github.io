@@ -23,7 +23,7 @@
 
    <url>
 
-      <loc>https://takmanman.github.io/tutorials/2019-09-08-basic-cnn.html</loc>
+      <loc>https://takmanman.github.io/2019/09/08/basic-cnn.html</loc>
 
       <lastmod>2019-09-14</lastmod>
 	  
@@ -32,38 +32,25 @@
 	  <priority>0.8</priority>
 	  
 	  <image:image>
-         <image:loc>https://takmanman.github.io/tutorials/images/cnn_filter_output_dimensions.png</image:loc>
+         <image:loc>https://takmanman.github.io/assets/posts/2019-09-08-images/cnn_filter_output_dimensions.png</image:loc>
          <image:caption>What exactly happens in a convolution layer.</image:caption>
        </image:image>
 	   
 	   <image:image>
-         <image:loc>https://takmanman.github.io/tutorials/images/cnn_multi_filters_output_dimensions.png</image:loc>
+         <image:loc>https://takmanman.github.io/assets/posts/2019-09-08-images/cnn_multi_filters_output_dimensions.png</image:loc>
          <image:caption>Convolutions between multiple filters and an input with 3 channels.</image:caption>
        </image:image>
 	   
 	   <image:image>
-         <image:loc>https://takmanman.github.io/tutorials/images/cnn_output_size.png</image:loc>
+         <image:loc>https://takmanman.github.io/assets/posts/2019-09-08-images/cnn_output_size.png</image:loc>
          <image:caption>How the spatial dimension of the layer output progresses along a convolutional neural network.</image:caption>
        </image:image>
 	   
 	   <image:image>
-         <image:loc>https://takmanman.github.io/tutorials/images/basic_cnn.png</image:loc>
+         <image:loc>https://takmanman.github.io/assets/posts/2019-09-08-images/basic_cnn.png</image:loc>
          <image:caption>A forward pass in a basic CNN model.</image:caption>
        </image:image>
 
    </url>
-
-   <url>
-
-      <loc>https://takmanman.github.io/blog/</loc>
-
-      <lastmod>2019-09-08</lastmod>
-
-      <changefreq>monthly</changefreq>
-	  
-	  <priority>0.4</priority>
-
-   </url>
-
 
 </urlset>
