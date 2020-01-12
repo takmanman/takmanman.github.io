@@ -1,0 +1,6 @@
+Fruit Dove Pink CE5B78 rgb(206,91,120)
+Dark Cheedar E08119 rgb(224,129,25)
+Butterscotch E19640 rgb(225,150,64)
+Galaxy Blue 2A4B7C rgb(42,75,124)
+Guacamole 797B3A rgb(121,123,58)
+Grapeade 85677B rgb(133,103,123)
