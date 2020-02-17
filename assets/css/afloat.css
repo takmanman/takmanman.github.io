@@ -37,6 +37,32 @@ img {
     max-height: 100%;
 }
 
+.navbar {
+	overflow: hidden;
+	background-color: rgb(32,156,238);
+	position: fixed;
+	top: 0;
+	width: 100%;
+  
+	margin-left:var(--banner-margin);
+	margin-right:var(--banner-margin);
+}
+
+.navbar a {
+	float: right;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 18px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar a:hover {
+	background: rgb(14,114,180);
+	color: white;
+}
+
 .banner{
 
 	margin-left:var(--banner-margin);
