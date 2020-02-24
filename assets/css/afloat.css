@@ -101,13 +101,20 @@ img {
 
 .posts-container {
   display: flex;
+  flex-flow: row wrap;
+  
+  width : 100%;
+  
   align-content: space-between;
-  flex-direction: row;
+  
+ 
   padding:0;
 }
 
 .post-float {
-	width:30%;
+	
+	flex: 33%;
+    max-width: 33%;
 	
 	border-radius: 10px;
 	
@@ -123,16 +130,19 @@ img {
 	color:black;
 }
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="container"] {
-    width: 100%;
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 960px) {
+  .post-float {
+    flex: 50%;
+    max-width: 50%;
   }
-  [class*="post-float"] {
-    width: 95%;
-  }
-  [class*="banner"]{
-	padding: 2rem 2rem;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 800px) {
+  .post-float {
+    flex: 100%;
+    max-width: 100%;
   }
 }
   

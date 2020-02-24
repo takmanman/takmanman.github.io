@@ -7,5 +7,9 @@
 	padding-bottom: 0.8em;
 	padding-left: 0.8em;
 	line-height: 1.5;
-	overflow: auto;}
+	overflow: auto;
+}
+
+.equations {
+	overflow: auto;
 }
