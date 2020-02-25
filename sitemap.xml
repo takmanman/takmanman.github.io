@@ -17,7 +17,7 @@
 
       <changefreq>monthly</changefreq>
 
-      <priority>0.6</priority>
+      <priority>0.8</priority>
 
    </url>
 
@@ -25,7 +25,7 @@
 
       <loc>https://takmanman.github.io/2019/09/08/basic-cnn.html</loc>
 
-      <lastmod>2019-09-14</lastmod>
+      <lastmod>2020-02-23</lastmod>
 	  
 	  <changefreq>monthly</changefreq>
 	  
@@ -52,5 +52,19 @@
        </image:image>
 
    </url>
+   
+   <url>
+
+      <loc>https://takmanman.github.io/2020/02/16/map-vs-mle.html</loc>
+
+      <lastmod>2020-02-23</lastmod>
+	  
+	  <changefreq>monthly</changefreq>
+	  
+	  <priority>0.8</priority>
+	  
+	  
+   </url>
+   
 
 </urlset>
