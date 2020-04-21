@@ -16,4 +16,6 @@ exclude:
 
 markdown: kramdown
 highlighter: rouge  
+
+emptyArray: []
   

@@ -1,0 +1,25 @@
+{% capture page_slug %}{{ (page.date | date: "%Y-%m-%d" )|append: '-'|append: page.shortname }}{% endcapture %}
+
+{% assign comments_map = site.data.comments[page_slug] %}
+{% assign comments = site.emptyArray %} 
+{% for comment in comments_map %}
+  {% assign comments = comments | push: comment[1] %}
+{% endfor %}
+
+{% assign comment_count = comments | size %}
+
+<div class="container">
+	<h2>Comments</h2>
+<ol>
+  {% assign sorted_comments = comments | sort: 'date' %}
+  {% for comment in sorted_comments %}
+    
+    {% include comment.html %}
+    <hr>
+  {% endfor %}
+ </ol>
+ 
+ {% include comment-new.html %}
+</div>
+
+  

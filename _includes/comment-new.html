@@ -1,0 +1,18 @@
+<h2>Submit new comment</h2>
+
+{% capture comment_date %}{{ page.date | date: "%Y-%m-%d" }}{% endcapture %}
+{% capture comment_directory %}{{ comment_date|append: '-'|append: page.shortname }}{% endcapture %}
+<form action="https://7n3q0jag7c.execute-api.us-west-2.amazonaws.com/alpha/%7Bproxy+%7D" method = "put">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" value="" required><br><br>
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="email" value=""><br><br>
+  <label for="comment">Comment:</label><br>
+  <textarea id="comment" name="comment" value="" rows="4" cols="50" required></textarea><br><br>
+  
+  <input type="hidden" name="comment_directory" value="{{comment_directory}}" />
+  <input type="hidden" name="date" value="{{comment_date}}" />
+  
+  <input type="submit" value="Submit">
+</form>
+
