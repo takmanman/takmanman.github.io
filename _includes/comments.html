@@ -9,6 +9,7 @@
 {% assign comment_count = comments | size %}
 
 <div class="container">
+<hr>
 	<h2>Comments</h2>
 <ol>
   {% assign sorted_comments = comments | sort: 'date' %}
@@ -18,8 +19,9 @@
     <hr>
   {% endfor %}
  </ol>
- 
+ <hr>
  {% include comment-new.html %}
+ 
 </div>
 
   
