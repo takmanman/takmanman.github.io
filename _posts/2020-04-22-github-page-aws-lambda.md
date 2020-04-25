@@ -53,7 +53,7 @@ For the rest of this section, I am going to assume that you already know how to 
 
 Jekyll is essentially a parser, one of its features is that it can parse a data file written in YAML (or JSON, CSV) and use it to create the static web content.
 Note that all the data files must be inside the directory <span style="font-size:1.2rem; font-family:monospace">_data</span>.
-In my setup (which I learnt <a href="https://damieng.com/blog/2018/05/28/wordpress-to-jekyll-comments" target = "_blank">here</a>), each comment is stored as one YAML file, and they are organized according to the post they are refering to. The directory structure is shown below:
+In my setup (which I learnt <a href="https://damieng.com/blog/2018/05/28/wordpress-to-jekyll-comments" target ="_blank">here</a>), each comment is stored as one YAML file, and they are organized according to the post they are refering to. The directory structure is shown below:
 <figure>
 <img src="{{site.url}}/assets/posts/2020-04-22-images/directory_structure.png"  style="display: block; margin: auto; width: 60%;"/>
 <figcaption>Fig.2 - The directory structure of a jekyll site with a comment system</figcaption>
