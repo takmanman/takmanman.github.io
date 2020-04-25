@@ -187,7 +187,7 @@ personal access token</a> in the header for authentication purpose:
 All these should be sent to the GitHub API as a PUT request. In the next section, you will see how the PUT request is assembled in the Lambda function.
 
 <h1 id="aws_section">3. Amazon API Gateway and AWS Lambda</h1> 
-<h2>3.a Setting Up the REST API</h2>
+<h2>3.a Set Up the REST API</h2>
 Amazon API Gateway let us create APIs that access various Amazon Web Service. In our case, we just want to set up a simple REST API that invokes an AWS Lambda function. 
 Creating a REST API with Lambda integration is extremely simple, just follow this <a href="https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-getting-started-with-rest-apis.html" target ="_blank">5-step guideline</a> 
 (Actually we just need the first three steps, but I think it is good to go through all five.)
@@ -209,7 +209,7 @@ Third, the API endpoint can be find under Stages. It is the invoke URL. Once you
 <figcaption>Fig.3 - Find the API endpoint</figcaption>
 </figure>
 
-<h2>3b. Creating the Lambda Function</h2>
+<h2>3b. Create the Lambda Function</h2>
 The code of the Lambda function in my setup is shown below. It is pretty straight forward. There are a couple of points that may worth a little bit more elaboration.
 <ol>
 <li>When the Lambda function is invoked by a POST method, the payload is in the input parameter <span style="font-size:1.2rem; font-family:monospace">event["body"]</span>. You can retrieve your form data accordlingly.</li> 
