@@ -28,6 +28,14 @@ body{
 	font-family: "Helvetica";
 }
 
+a {
+  color: var(--main-color);
+}
+
+a:visited {
+  color: var(--complementary-color);
+}
+
 li{
   margin: 12px 0;
 }
