@@ -53,7 +53,7 @@ For the rest of this section, I am going to assume that you already know how to 
 
 Jekyll is essentially a parser, one of its features is that it can parse a data file written in YAML (or JSON, CSV) and use it to create the static web content.
 Note that all the data files must be inside the directory <span style="font-size:1.2rem; font-family:monospace">_data</span>.
-In my setup (which I learnt <a href="https://damieng.com/blog/2018/05/28/wordpress-to-jekyll-comments" target = _blank>here</a>), each comment is stored as one YAML file, and they are organized according to the post they are refering to. The directory structure is shown below:
+In my setup (which I learnt <a href="https://damieng.com/blog/2018/05/28/wordpress-to-jekyll-comments" target = "_blank">here</a>), each comment is stored as one YAML file, and they are organized according to the post they are refering to. The directory structure is shown below:
 <figure>
 <img src="{{site.url}}/assets/posts/2020-04-22-images/directory_structure.png"  style="display: block; margin: auto; width: 60%;"/>
 <figcaption>Fig.2 - The directory structure of a jekyll site with a comment system</figcaption>
@@ -147,7 +147,7 @@ In the <a href="#aws_section">section after next</a>, we will discuss how to set
 <h1>2. GitHub REST API </h1>
 
 The GitHub REST API allows you to read and manipulate your GitHub repos through HTTP endpoints. For our purpose, we just need to create a file in the repo. 
-The documentation of how to do that is <a href="https://developer.github.com/v3/repos/contents/#create-or-update-a-file" targe =_blank>here</a>. The followings show you the different part of the HTTP request (in Python3):
+The documentation of how to do that is <a href="https://developer.github.com/v3/repos/contents/#create-or-update-a-file" targe ="_blank">here</a>. The followings show you the different part of the HTTP request (in Python3):
 
 The HTTP endpoint would be something like this:
 
@@ -285,10 +285,10 @@ And this is everything you need to set up a comment system for your GitHub Page.
 <h1>References</h1>
 I learnt from the following posts and websites when creating  this project:
 <ol>
-<li><a href="https://damieng.com/blog/2018/05/28/wordpress-to-jekyll-comments" target=_blank>WordPress to Jekyll part 2 - Comments & commenting</a></li>
-<li><a href="https://medium.com/@tryexceptpass/using-github-as-a-flat-data-store-and-aws-lambda-to-update-it-8cfa2d1bd524" target=_blank>Using GitHub as a Flat Data Store and AWS Lambda to Update it</a></li>
-<li><a href="http://jekyllbootstrap.com/lessons/jekyll-introduction.html" target=_blank>How Jekyll Works</a></li>
-<li><a href="https://developer.github.com/v3/" target=_blank>GitHub Developer REST API v3 Overview</a></li>
-<li><a href="https://aws.amazon.com/api-gateway/faqs/" target=_blank>Amazon API Gateway FAQs</a></li>
+<li><a href="https://damieng.com/blog/2018/05/28/wordpress-to-jekyll-comments" target="_blank">WordPress to Jekyll part 2 - Comments & commenting</a></li>
+<li><a href="https://medium.com/@tryexceptpass/using-github-as-a-flat-data-store-and-aws-lambda-to-update-it-8cfa2d1bd524" target="_blank">Using GitHub as a Flat Data Store and AWS Lambda to Update it</a></li>
+<li><a href="http://jekyllbootstrap.com/lessons/jekyll-introduction.html" target="_blank">How Jekyll Works</a></li>
+<li><a href="https://developer.github.com/v3/" target="_blank">GitHub Developer REST API v3 Overview</a></li>
+<li><a href="https://aws.amazon.com/api-gateway/faqs/" target="_blank">Amazon API Gateway FAQs</a></li>
 </ol>
 
