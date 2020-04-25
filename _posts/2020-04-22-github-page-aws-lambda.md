@@ -49,7 +49,10 @@ or create your own HTML documents instead of using a static stie generator like 
 As GitHub Pages are powered by Jekyll, I assume that if you are hosting your blog (or your small business website, your project page, etc) on a GitHub Page, you are already using Jekyll.
 If you are not using Jekyll yet, I do recommend giving it a try. It may take a bit of time to set up, but in a long run it makes maintainence much easier.
 
-For the rest of this section, I am going to assume that you already know how to use Jekyll. If not, you may checkout out their <a href="https://jekyllrb.com/docs/step-by-step/01-setup/" target="_blank">step-by-step tutorial</a>, it will probably take about 30 minute to get your first Jekyll site up and running.
+For the rest of this section, I am going to assume that you already know how to use Jekyll. 
+If not, you may checkout out their <a href="https://jekyllrb.com/docs/step-by-step/01-setup/" target="_blank">step-by-step tutorial</a>, it will probably take about 30 minute to get your first Jekyll site up and running.
+
+You can also check out a bare-bones version of my Jekyll site at <a href="https://github.com/takmanman/jekyll-with-commenting" target="_blank">this GitHub repo</a>.
 
 Jekyll is essentially a parser, one of its features is that it can parse a data file written in YAML (or JSON, CSV) and use it to create the static web content.
 Note that all the data files must be inside the directory <span style="font-size:1.2rem; font-family:monospace">_data</span>.
