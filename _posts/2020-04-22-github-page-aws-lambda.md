@@ -147,7 +147,7 @@ In the <a href="#aws_section">section after next</a>, we will discuss how to set
 <h1>2. GitHub REST API </h1>
 
 The GitHub REST API allows you to read and manipulate your GitHub repos through HTTP endpoints. For our purpose, we just need to create a file in the repo. 
-The documentation of how to do that is <a href="https://developer.github.com/v3/repos/contents/#create-or-update-a-file" targe ="_blank">here</a>. The followings show you the different part of the HTTP request (in Python3):
+The documentation of how to do that is <a href="https://developer.github.com/v3/repos/contents/#create-or-update-a-file" target ="_blank">here</a>. The followings show you the different part of the HTTP request (in Python3):
 
 The HTTP endpoint would be something like this:
 
@@ -173,7 +173,7 @@ The payload is something like this:
 Both <span style="font-size:1.2rem; font-family:monospace">message</span> and <span style="font-size:1.2rem; font-family:monospace">content</span> are required.
 <span style="font-size:1.2rem; font-family:monospace">content</span> is the YAML comment file that you are trying to create. It should be encoded in Base64.
 
-Also, you will have to put your <a href="https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line" target = _target>
+Also, you will have to put your <a href="https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line" target ="_blank">
 personal access token</a> in the header for authentication purpose:
 ```python
 {
@@ -186,7 +186,7 @@ All these should be sent to the GitHub API as a PUT request. In the next section
 <h1 id="aws_section">3. Amazon API Gateway and AWS Lambda</h1> 
 <h2>3.a Setting Up the REST API</h2>
 Amazon API Gateway let us create APIs that access various Amazon Web Service. In our case, we just want to set up a simple REST API that invokes an AWS Lambda function. 
-Creating a REST API with Lambda integration is extremely simple, just follow this <a href="https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-getting-started-with-rest-apis.html">5-step guideline</a> 
+Creating a REST API with Lambda integration is extremely simple, just follow this <a href="https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-getting-started-with-rest-apis.html" target ="_blank">5-step guideline</a> 
 (Actually we just need the first three steps, but I think it is good to go through all five.)
 
 Once you have a basic idea of how to set up a REST API and link it to an AWS Lambda function, you can set one up for your comment system. 
@@ -212,7 +212,7 @@ The code of the Lambda function in my setup is shown below. It is pretty straigh
 <li>When the Lambda function is invoked by a POST method, the payload is in the input parameter <span style="font-size:1.2rem; font-family:monospace">event["body"]</span>. You can retrieve your form data accordlingly.</li> 
 <li>The Lambda function will return a response to the POST method, and the POST method will return it as a HTTP response. 
 I have set the response's status code to 301, and the location to the url of the originating post. It is my attempt to implement the 
-PR part of the <a href="https://en.wikipedia.org/wiki/Post/Redirect/Get">POST-REDIRCT-GET</a> pattern.</li>
+PR part of the <a href="https://en.wikipedia.org/wiki/Post/Redirect/Get" target ="_blank">POST-REDIRCT-GET</a> pattern.</li>
 </ol>
 ```python
 import json
