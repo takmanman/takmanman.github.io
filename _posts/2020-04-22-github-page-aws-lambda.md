@@ -6,7 +6,7 @@ description: "In this post, I am going to show you how to add a comment system o
 excerpt: "Add a comment system to your static website using AWS Lambda and Amazon API Gateway"
 image: "/assets/posts/2020-04-22-images/architecture.png"
 shortname: "GitHub-page-aws-lambda"
-twitter_title:"Add a Comment System to Your Static WebSite Using AWS Lambda and Amazon API Gateway"
+twitter_title: "Add a Comment System to Your Static WebSite Using AWS Lambda and Amazon API Gateway"
 date: 2020-04-22
 ---
 
