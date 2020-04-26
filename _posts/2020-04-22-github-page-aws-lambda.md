@@ -7,6 +7,7 @@ excerpt: "Add a comment system to your static website using AWS Lambda and Amazo
 image: "/assets/posts/2020-04-22-images/architecture.png"
 shortname: "GitHub-page-aws-lambda"
 twitter_title: "Add a Comment System to Your Static WebSite Using AWS Lambda and Amazon API Gateway"
+twitter_image: "https://takmanman.github.io/assets/posts/2020-04-22-images/architecture.png"
 date: 2020-04-22
 ---
 
