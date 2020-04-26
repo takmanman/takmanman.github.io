@@ -21,7 +21,7 @@ It is just that we don't have to maintain it. Instead a cloud service provider w
 The architecture of the comment system is shown below.
 
 <figure>
-<img src="{{site.url}}/assets/posts/2020-04-22-images/architecture.png"  style="display: block; margin: auto; width: 60%;"/>
+<img id="architecture_img" src="{{site.url}}/assets/posts/2020-04-22-images/architecture.png"  style="display: block; margin: auto; "/>
 <figcaption>Fig.1 - The architecture of the comment system</figcaption>
 </figure>
 
@@ -58,7 +58,7 @@ Jekyll is essentially a parser, one of its features is that it can parse a data 
 Note that all the data files must be inside the directory <span style="font-size:1.2rem; font-family:monospace">_data</span>.
 In my setup (which I learnt <a href="https://damieng.com/blog/2018/05/28/wordpress-to-jekyll-comments" target ="_blank">here</a>), each comment is stored as one YAML file, and they are organized according to the post they are refering to. The directory structure is shown below:
 <figure>
-<img src="{{site.url}}/assets/posts/2020-04-22-images/directory_structure.png"  style="display: block; margin: auto; width: 60%;"/>
+<img src="{{site.url}}/assets/posts/2020-04-22-images/directory_structure.png"  style="display: block; margin: auto;"/>
 <figcaption>Fig.2 - The directory structure of a jekyll site with a comment system</figcaption>
 </figure>
 
@@ -199,14 +199,14 @@ First, when you create the method (for invoking your comment-creating Lambda fun
 Second, check the "Use Lambda Proxy integration" checkbox as shown below.
 
 <figure>
-<img src="{{site.url}}/assets/posts/2020-04-22-images/aws_post_method.png"  style="display: block; margin: auto; width: 60%;"/>
+<img src="{{site.url}}/assets/posts/2020-04-22-images/aws_post_method.png"  style="display: block; margin: auto; "/>
 <figcaption>Fig.3 - Create a POST method in your API on Amazon API Gateway</figcaption>
 </figure>
 
 Third, the API endpoint can be find under Stages. It is the invoke URL. Once you put it in your <a href="#comment_form">comment form</a>, it will invoke the Lambda function every time the form is submitted.
 <figure>
-<img src="{{site.url}}/assets/posts/2020-04-22-images/aws_invoke_url.png"  style="display: block; margin: auto; width: 60%;"/>
-<figcaption>Fig.3 - Find the API endpoint</figcaption>
+<img src="{{site.url}}/assets/posts/2020-04-22-images/aws_invoke_url.png"  style="display: block; margin: auto; "/>
+<figcaption>Fig.4 - Find the API endpoint</figcaption>
 </figure>
 
 <h2>3b. Create the Lambda Function</h2>
@@ -295,3 +295,29 @@ I learnt from the following posts and websites when creating  this project:
 <li><a href="https://aws.amazon.com/api-gateway/faqs/" target="_blank">Amazon API Gateway FAQs</a></li>
 </ol>
 
+<!-- The Modal -->
+<div id="popup-modal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modal-img">
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("popup-modal");
+
+var img = document.getElementById("architecture_img");
+var modalImg = document.getElementById("modal-img");
+img.onclick = enlarge
+
+function enlarge(){
+  modal.style.display = "block";
+  modal.style.paddingTop = (screen.height*0.5 - img.height*0.5) + "px";
+  modalImg.src = this.src;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
