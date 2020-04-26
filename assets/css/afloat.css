@@ -1,8 +1,8 @@
 @import url(coding.css);
 @import url(london.css);
 :root {
-  --body-margin: 1rem;  
-  --body-padding: 1rem;
+  --body-margin: 0rem;  
+  --body-padding: 0rem;
   
   --banner-margin: 0rem;
   
@@ -88,36 +88,36 @@ img {
 }
 
 .navbar {
-	overflow: hidden;
-	background-color: var(--secondary-color);
+	margin-bottom:0em;
+    padding:2rem 2rem;
+	background-color:var(--main-color);
 	position: fixed;
-	top: 0;
-	width: 100%;
-        margin: auto;
-  
+	float: right;
+}
+
+.navbar:hover {
+	background: var(--secondary-shade);
+	color: white;
 }
 
 .navbar a {
-	float: right;
-	display: block;
+
 	color: white;
-	text-align: center;
-	padding: 14px 14px;
+	
 	text-decoration: none;
 	font-size: 17px;
-}
-
-.navbar a:hover {
-	background: var(--secondary-shade);
-	color: white;
 }
 
 .banner{
 
 	margin-bottom:3em;
-        padding:6rem 2rem;
+    padding:6rem 2rem;
 	background-color:var(--main-color);
 	
+}
+
+.banner a{
+	float: right;
 }
 
 .banner p{
