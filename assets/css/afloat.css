@@ -251,10 +251,13 @@ img {
 	  padding:3rem 2rem;
   }
   
-  .navbar {
-	  max-width:100%;
-  }
   
+  .navbar {
+	max-width: 100%;
+	
+  }
+
+
   h1 {
 	  font-size: 1.2rem;
   }
