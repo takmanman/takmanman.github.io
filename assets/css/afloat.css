@@ -2,9 +2,9 @@
 @import url(london.css);
 :root {
   --body-margin: 0rem;  
-  --body-padding: 1rem;
+  --body-padding: 0rem;
   
-  --banner-margin: -1rem;
+  --banner-margin: 0rem;
   
   --post-float-padding: 1.5rem;
   --post-float-date-margin: -1.5rem;
@@ -88,12 +88,10 @@ img {
 }
 
 .navbar {
-	
-	margin-top: var(--banner-margin);
-	margin-left: var(--banner-margin);
 	margin-bottom:0em;
 	background-color:var(--main-color);
 	position: fixed;
+	top:0;
 	
 }
 
@@ -108,19 +106,18 @@ img {
 	padding:2rem ;
 	text-decoration: none;
 	font-size: 17px;
-	position: fixed;
 }
 
 .banner{
-	
-	margin-top: var(--banner-margin);
-	margin-left: var(--banner-margin);
-	margin-right: var(--banner-margin);
 
 	margin-bottom:3em;
     padding:6rem 2rem;
 	background-color:var(--main-color);
 	
+}
+
+.banner a{
+	float: right;
 }
 
 .banner p{
@@ -270,9 +267,9 @@ img {
   }
   
   
-  .navbar a {
-    
-	padding:0.5rem ;
+  .navbar {
+	padding:0.5em;
+	
   }
 
 
