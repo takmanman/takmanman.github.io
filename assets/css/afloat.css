@@ -1,10 +1,10 @@
 @import url(coding.css);
 @import url(london.css);
 :root {
-  --body-margin: 1rem;  
-  --body-padding: 1rem;
+  --body-margin: 0rem;  
+  --body-padding: 0rem;
   
-  --banner-margin: -2rem;
+  --banner-margin: 0rem;
   
   --post-float-padding: 1.5rem;
   --post-float-date-margin: -1.5rem;
@@ -93,9 +93,6 @@ img {
 	position: fixed;
 	top: 0;
 	width: 100%;
-
-        margin-left:var(--banner-margin);
-	margin-right:var(--banner-margin);
   
 }
 
@@ -116,9 +113,6 @@ img {
 
 .banner{
 
-	margin-left:var(--banner-margin);
-	margin-right:var(--banner-margin);
-	margin-top:var(--banner-margin);
 	margin-bottom:3em;
     padding:6rem 2rem;
 	background-color:var(--main-color);
@@ -258,9 +252,8 @@ img {
   }
   
   
-  .container {
-    width: 100%
-  }
+  .navbar {
+	max-width: 100%;
 	
   }
 
@@ -275,6 +268,11 @@ img {
 	  font-size: 1rem;
   }
   
+  
+  .container {
+    width: 98%;
+	max-width: 98%;
+  }
   
   img {
   
