@@ -89,10 +89,9 @@ img {
 
 .navbar {
 	margin-bottom:0em;
-    padding:2rem 2rem;
 	background-color:var(--main-color);
 	position: fixed;
-	float: right;
+	
 }
 
 .navbar:hover {
@@ -101,9 +100,9 @@ img {
 }
 
 .navbar a {
-
+    display: block;
 	color: white;
-	
+	padding:2rem ;
 	text-decoration: none;
 	font-size: 17px;
 }
@@ -202,6 +201,13 @@ img {
 	
 }
 
+.pop-up-img:hover
+{
+  opacity:0.7;
+  cursor: pointer;
+}
+
+
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -238,6 +244,13 @@ img {
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* Responsive layout */
