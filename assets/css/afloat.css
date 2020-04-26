@@ -275,7 +275,7 @@ textarea {
   
   
   .navbar a{
-	padding:0.5em;
+	padding:1em;
 	
   }
 
@@ -294,8 +294,7 @@ textarea {
   }
     
   .container {
-    width: 100%;
-	max-width: 100%;
+    width: 95%;
   }
   
   img {
