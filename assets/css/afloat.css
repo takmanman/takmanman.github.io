@@ -94,8 +94,6 @@ img {
 	top: 0;
 	width: 100%;
   
-	margin-left:var(--banner-margin);
-	margin-right:var(--banner-margin);
 }
 
 .navbar a {
@@ -115,9 +113,6 @@ img {
 
 .banner{
 
-	margin-left:var(--banner-margin);
-	margin-right:var(--banner-margin);
-	margin-top:var(--banner-margin);
 	margin-bottom:3em;
     padding:6rem 2rem;
 	background-color:var(--main-color);
@@ -255,6 +250,11 @@ img {
   .banner {
 	  padding:3rem 2rem;
   }
+  
+  .navbar {
+	  max-width:100%;
+  }
+  
   h1 {
 	  font-size: 1.2rem;
   }
@@ -264,9 +264,11 @@ img {
   h3 {
 	  font-size: 1rem;
   }
+  
+  
   .container {
-    width: 100%;
-	max-width: 100%;
+    width: 98%;
+	max-width: 98%;
   }
   
   img {
