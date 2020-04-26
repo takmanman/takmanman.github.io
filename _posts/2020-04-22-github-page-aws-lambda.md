@@ -282,7 +282,6 @@ def lambda_handler(event, context):
         }    
 
 ```
-
 And this is everything you need to set up a comment system for your GitHub Page.
 
 <h1>References</h1>
@@ -295,19 +294,17 @@ I learnt from the following posts and websites when creating  this project:
 <li><a href="https://aws.amazon.com/api-gateway/faqs/" target="_blank">Amazon API Gateway FAQs</a></li>
 </ol>
 
-<!-- The Modal -->
 <div id="popup-modal" class="modal">
   <span class="close">&times;</span>
   <img class="modal-content" id="modal-img">
 </div>
 
 <script>
-// Get the modal
 var modal = document.getElementById("popup-modal");
 
 var img = document.getElementById("architecture_img");
 var modalImg = document.getElementById("modal-img");
-img.onclick = enlarge
+img.onclick = enlarge;
 
 function enlarge(){
   modal.style.display = "block";
