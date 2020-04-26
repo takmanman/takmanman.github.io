@@ -89,6 +89,7 @@ img {
 
 .navbar {
 	
+	margin-top: var(--banner-margin);
 	margin-left: var(--banner-margin);
 	margin-bottom:0em;
 	background-color:var(--main-color);
@@ -112,17 +113,14 @@ img {
 
 .banner{
 	
+	margin-top: var(--banner-margin);
 	margin-left: var(--banner-margin);
-	margin-right: var(--banner-date-margin);
+	margin-right: var(--banner-margin);
 
 	margin-bottom:3em;
     padding:6rem 2rem;
 	background-color:var(--main-color);
 	
-}
-
-.banner a{
-	float: right;
 }
 
 .banner p{
