@@ -26,6 +26,9 @@ body{
 	padding-top:var(--body-padding);
 	
 	font-family: "Helvetica";
+	
+	width:100%;
+	overflow-x: hidden;
 }
 
 a {
