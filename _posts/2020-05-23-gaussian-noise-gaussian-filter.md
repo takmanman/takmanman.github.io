@@ -16,7 +16,7 @@ date: 2020-05-23
           src="https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-mml-chtml.js">
   </script>
 
-  In image processing, two concepts are of utmost importance: Gaussian noise and Gaussian Filter.
+  In image processing, two concepts are of fundamental importance: Gaussian noise and Gaussian Filter.
   A solid understanding of these two concepts will pave a smooth path for further studies.
 
   We can conveniently think of noise as the unwanted signal in an image. Noise is random in nature. Gaussian noise is a type of noise that follows a Gaussian distribution.
@@ -25,9 +25,9 @@ date: 2020-05-23
 
   <h1> Why is Gaussian noise important in image processing?</h1>
 
-  Noise in images arises from various sources. Under most conditions, these noises follow the Gaussian distribution and therefore are refered to as Gaussian noises. The main source of Gaussian noise includes sensor noise and electronic circuit noise.
+  Noise in images arises from various sources. Under most conditions, these noises follow a Gaussian distribution and therefore are refered to as Gaussian noises. The main source of Gaussian noise includes sensor noise and electronic circuit noise.
 
-  There are also noises that follow other probability distributions, e.g. shot noise can be described by a poisson distribution. However, according to the <a href="https://en.wikipedia.org/wiki/Central_limit_theorem" target="_blank">central limit theorem</a>, <i>when random variables that follow different distribuions are added together, the sum tends to follow a Gaussian distrbution.</i> Therefore, when we develop a single-noise model, as will be described next, we often choose to describe the noise as Gaussian noise.
+  There are also noises that follow other probability distributions, e.g. shot noise can be described by a poisson distribution. However, according to the <a href="https://en.wikipedia.org/wiki/Central_limit_theorem" target="_blank">central limit theorem</a>, <i>when random variables that follow different distribuions are added together, the sum tends to follow a Gaussian distrbution.</i> Therefore, when we develop a single-noise model, as will be described next, we often choose to describe the noise as Gaussian.
 
   <h1> A Gaussian noise model for images </h1>
   <p>When we talk about the Gaussian noise in an image, usually we are thinking of additive Gaussian noise. In other words, if we describes the uncontaminated, free-of-noise source image as \(S(x,y)\), then the observed image \(O(x,y)\) is given by:</p>
@@ -83,7 +83,7 @@ imgplot = plt.imshow(noisy_50_img.astype('uint8'))
 ```
 
   <h1> Gaussian filter </h1>
-  A filter is defined by its kernel. When we apply a filter to an image, the result is the convolution between the kernel and the orginal image.
+  A filter is defined by its kernel. When we apply a filter to an image, the result is the convolution between the kernel and the original image.
 
   The kernel of a Gaussian filter is a 2d Gaussian function (Fig.2). When such a kernel is convolved with an image, it creates a blurring effect. This is because each pixel is now assigned with <b>a weighted sum of itself and its neighbouring pixels</b>. Any discontinuities in the neighbourhood are thereby <b>averaged out</b>.
 
