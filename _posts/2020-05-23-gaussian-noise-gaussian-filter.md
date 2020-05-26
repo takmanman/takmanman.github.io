@@ -2,7 +2,7 @@
 layout: page
 title: "Gaussian Noise and Gaussing Filter in Image Processing"
 subtitle: "Imaging Concepts for Beginners"
-description: "In this post, I am going to describe the Gaussian noise and Gaussian filter."
+description: "In this post, I am going to introduce the Gaussian noise and Gaussian filter."
 excerpt: "An introduction of Gaussian noise and Gaussing filter in image processing"
 image: "/assets/posts/2020-05-23-images/combined.jpg"
 shortname: "gaussian-noise-and-filter"
