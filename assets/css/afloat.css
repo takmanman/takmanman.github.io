@@ -32,11 +32,11 @@ body{
 }
 
 a {
-  color: var(--main-color);
+  color: var(--secondary-shade);
 }
 
 a:visited {
-  color: var(--complementary-color);
+  color: var(--main-color);
 }
 
 li{
@@ -85,6 +85,12 @@ img {
     max-width: 75%;
     max-height: 100%;
 	padding-bottom:20px;
+}
+
+.comments-container{
+	margin: auto;
+	width: 75%;
+        padding-top:2rem;
 }
 
 .container{
@@ -211,6 +217,12 @@ textarea {
 	
 }
 
+
+.post-float:visited{
+    color: black;
+}
+
+
 .row {
   display: flex;
 }
@@ -300,7 +312,9 @@ textarea {
   }
 
   h1 {
+          padding-top:1.5rem;
 	  font-size: 1.2rem;
+          padding-bottom:1.2rem;
   }
   h2 {
 	  font-size: 1.1rem;
@@ -311,6 +325,10 @@ textarea {
     
   .container {
     width: 95%;
+  }
+  .comments-container{
+	width: 95%;
+        padding-top:1.5rem;
   }
   
   img {
