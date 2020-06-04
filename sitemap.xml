@@ -118,5 +118,21 @@
        </image:image>
 	   
    </url>
+<url>
+
+      <loc>https://takmanman.github.io/2020/06/02/minmaxscaler-cudf.html</loc>
+
+      <lastmod>2020-06-03</lastmod>
+	  
+	  <changefreq>monthly</changefreq>
+	  
+	  <priority>0.8</priority>
+	  
+	  <image:image>
+         <image:loc>https://takmanman.github.io/assets/posts/2020-06-02-images/RAPIDS-code-snippet.png</image:loc>
+         <image:caption>Running RAPIDS - Utilizing Your GPU for Non-Neural Network-Based Machine Learning Algorithms</image:caption>
+       </image:image>
+	   
+   </url>
    
 </urlset>
