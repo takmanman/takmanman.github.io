@@ -16,7 +16,7 @@ date: 2020-06-02
           src="https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-mml-chtml.js">
   </script>
 
-Not long ago, I could only use my GPU to run deep learning Algorithms. Libraries like TensorFlow and PyTorch allow me to build neural network models and run them on my GPU, which can drastically reduce computation time. For algorithms that are not neural network-based, such as support vector machine (SVM) and gradient boosted tree, I can use scikit-learn, but it does not run on GPUs.
+Not long ago, I could only use my GPU for running deep learning Algorithms. Libraries like TensorFlow and PyTorch allow me to build neural network models and run them on my GPU, which can drastically reduce computation time. For algorithms that are not neural network-based, such as support vector machine (SVM) and gradient boosted tree, I can use scikit-learn, but it does not run on GPUs.
 
 Then I discovered RAPIDS through some posts on Kaggle. It is a suite of libraries that provides the GPU version of some non-neural network-based algorithms such as SVM. I gave it a try and I am rather happy with it for 3 reasons:
 <ol>
