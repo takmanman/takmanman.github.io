@@ -7,7 +7,7 @@ excerpt: "Running RAPIDS - Utilizing Your GPU for Non-Neural Network-Based Machi
 image: "/assets/posts/2020-06-02-images/RAPIDS-code-snippet.png"
 shortname: "RAPIDS-intro"
 twitter_title: "Running RAPIDS - Utilizing Your GPU for Non-Neural Network-Based Machine Learning Algorithms"
-twitter_image: "/assets/posts/2020-06-02-images/RAPIDS-code-snippet.png"
+twitter_image: "https://takmanman.github.io/assets/posts/2020-06-02-images/RAPIDS-code-snippet.png"
 date: 2020-06-02
 ---
 
